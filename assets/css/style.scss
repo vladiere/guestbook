@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.guestbook {
+    display: flex;
+    height: 100vh;
+    background-color: rgb(235, 235, 235);
+
+    form {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px;
+
+        input {
+            padding: 10px 15px;
+            font-size: 14px;
+        }
+
+        textarea {
+            padding: 10px;
+            resize: none;
+            font-size: 14px;
+        }
+
+        button {
+            width: 40%;
+            padding: 10px 15px;
+            background-color: rgb(25, 118, 211);
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        h5 {
+            font-size: 42px;
+        }
+    }
+
+    .latest {
+        height: 100vh;
+        width: 50%;
+        background-color: #fff;
+        overflow-y: scroll;
+        position: relative;
+
+        #latestguest{
+            position: sticky;
+            top: 0;
+
+            h5 {
+                font-size: 42px;
+                margin: 40px;
+                background-color: #fff;
+            }
+        }
+        
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            margin: 40px;
+            width: 87%;
+            padding: 20px;
+            border: 1px solid #000;
+            gap: 5px;
+
+            
+        }
+    }
+}
